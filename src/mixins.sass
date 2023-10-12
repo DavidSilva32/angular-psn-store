@@ -1,0 +1,12 @@
+@mixin flex-container($justify, $align)
+    display: flex
+    justify-content: $justify
+    align-items: $align
+
+@mixin tablet-and-higher
+    @media screen and (min-width: 600px)
+        @content
+
+@mixin desktop
+    @media screen and (min-width: 1000px)
+        @content

@@ -1,0 +1,21 @@
+@import '../../../../mixins'
+@import '../../../../variables'
+
+.menu-bar-item__container    
+    ul
+        @include flex-container($justify: space-evenly, $align: center)
+        width: 100%
+        flex-wrap: wrap
+        gap: .125rem
+        @include tablet-and-higher
+            gap: 1rem 
+
+        li a
+            color: $secondary-color
+
+            @include tablet-and-higher
+                &:hover
+                    color: blue
+                    font-weight: 600
+                    transition: .2s
+            

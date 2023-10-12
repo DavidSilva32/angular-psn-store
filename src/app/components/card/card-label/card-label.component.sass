@@ -1,0 +1,17 @@
+@import '../../../../mixins'
+@import '../../../../variables'
+    
+.card-label__container
+    position: absolute
+    bottom: 90px
+    right: 0
+
+    &__content
+        @include flex-container($justify: center, $align: center)
+        
+        background: $secondary-color
+        color: $primary-color
+        padding: 0 .5rem
+        font-family: .75rem
+        font-weight: bold
+        height: 40px

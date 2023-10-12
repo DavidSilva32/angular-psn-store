@@ -1,0 +1,15 @@
+<main class="home__container">
+  <section class="home__container__title">
+    <h1>The Best Games</h1>
+  </section>
+  <app-card *ngFor="let card of gameCard_list"
+    gameCover="{{ card.gameCover }}"
+    gameLabel="{{ card.gameLabel }}"
+    gameType="{{ card.gameType }}"
+    gamePrice="{{ card.gamePrice }}"
+    alt="{{ card.alt }}"
+  ></app-card>
+  <section class="home__container__button">
+    <button type="button" (click)="getSomeCards(lastItem)">Load More</button>
+  </section>
+</main>

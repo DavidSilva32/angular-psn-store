@@ -1,0 +1,43 @@
+@import '../../../mixins'
+@import '../../../variables'
+    
+.home__container
+    padding-top: 5rem
+    width: 90%
+    margin: 0 auto
+
+    @include flex-container($justify: normal, $align: normal)
+    flex-direction: column
+    gap: 1rem
+
+    @include tablet-and-higher
+        @include flex-container($justify: center, $align: baseline)
+        flex-direction: row
+        flex-wrap: wrap
+
+    &__title
+        width: 100%
+        @include flex-container($justify: center, $align: center)
+
+        h1
+            color: $primary-color
+            font-size: 2rem
+
+            @include tablet-and-higher
+            font-size: 4rem
+
+    &__button
+        width: 100%
+        @include flex-container($justify: center, $align: center)
+
+        button
+            background: #00f7ff
+            color: $secondary-color
+            padding: .2rem .4rem
+            border: none
+            border-radius: .5rem
+
+            @include tablet-and-higher
+                &:hover
+                    color: $primary-color
+                    cursor: pointer                
