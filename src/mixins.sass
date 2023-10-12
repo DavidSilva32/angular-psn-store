@@ -1,12 +1,17 @@
+@import './variables'
+    
 @mixin flex-container($justify, $align)
     display: flex
     justify-content: $justify
     align-items: $align
 
+@mixin button($padding)
+    background: #00f7ff
+    color: $secondary-color
+    padding: $padding
+    border: none
+    border-radius: .5rem
+
 @mixin tablet-and-higher
     @media screen and (min-width: 600px)
-        @content
-
-@mixin desktop
-    @media screen and (min-width: 1000px)
         @content

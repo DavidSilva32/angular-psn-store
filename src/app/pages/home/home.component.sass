@@ -31,11 +31,7 @@
         @include flex-container($justify: center, $align: center)
 
         button
-            background: #00f7ff
-            color: $secondary-color
-            padding: .2rem .4rem
-            border: none
-            border-radius: .5rem
+            @include button($padding: .2rem .4rem)
 
             @include tablet-and-higher
                 &:hover

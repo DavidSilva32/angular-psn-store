@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   @Input()
+  gameVideo: string = ''
+  @Input()
   gameCover: string = ''
   @Input()
   alt: string = 'Game Cover'

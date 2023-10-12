@@ -3,6 +3,7 @@
     <h1>The Best Games</h1>
   </section>
   <app-card *ngFor="let card of gameCard_list"
+    gameVideo="{{ card.gameVideo }}"
     gameCover="{{ card.gameCover }}"
     gameLabel="{{ card.gameLabel }}"
     gameType="{{ card.gameType }}"

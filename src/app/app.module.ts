@@ -18,7 +18,7 @@ import { MenuBarItemComponent } from './components/menu-bar/menu-bar-item/menu-b
     MenuBarComponent,
     CardLabelComponent,
     CardPricingComponent,
-    MenuBarItemComponent
+    MenuBarItemComponent,
   ],
   imports: [
     BrowserModule,

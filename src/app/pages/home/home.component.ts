@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
 
   constructor() { 
     this.gameCard_list = [{
+      gameVideo: '',
       gameCover: '',
       alt: '',
       gameLabel: '',
